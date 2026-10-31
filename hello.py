@@ -1,2 +1,3 @@
 print("Krystian")
-print("trudne początki, uczę się na błędach")
+print("trudne początki,)
+print("uczę się na błędach")
