@@ -1,8 +1,8 @@
 # Plan nauki
 
 ## Profil
-- System: [UZUPEŁNIĆ: Windows / Mac / Linux]
-- Czas: [UZUPEŁNIĆ: godzin tygodniowo]
+- System: Windows
+- Czas: 3 godziny tygodniowo
 - Poziom: zero doświadczenia
 - Projekt fil rouge: konsolowa lista zadań (to-do)
 - Narzędzia: VS Code, Python, Git, GitHub
