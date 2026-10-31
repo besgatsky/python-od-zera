@@ -1,37 +1,40 @@
 # Postęp
 
 ## Aktualny etap
-Etap 0: zaliczony (bramka przeszła)
-Następny: Etap 1 (podstawy: zmienne, typy, warunki, pętle), jeszcze nie rozpoczęty
+Etap 1: zaliczony (bramka przeszła)
+Następny: Etap 2 (funkcje, listy, słowniki, start projektu: lista zadań), jeszcze nie rozpoczęty
 
 ## Zrobione
-- Uzupełniony profil w PLAN.md: Windows, 3 godziny tygodniowo
-- Zainstalowany Python 3.15.2 (z opcją "Add python.exe to PATH")
-- Zainstalowany VS Code z rozszerzeniem Python (Microsoft)
-- Zainstalowany Git 2.56.0 (domyślny edytor: VS Code, backend HTTPS: Windows Secure Channel)
-- Repo sklonowane lokalnie (poza OneDrive) na obu komputerach
-- Imię i e-mail w Git ustawione tylko dla tego repo (bez --global)
-- Pierwszy program: hello.py (wypisuje kilka linijek przez print)
-- Pierwsze commity z kodem i README, wysłane na GitHuba
-- Obieg między dwoma komputerami sprawdzony: commit i push na jednym, pull na drugim
-- README.md napisany własnymi słowami
+Etap 0:
+- Profil w PLAN.md uzupełniony: Windows, 3 godziny tygodniowo
+- Python 3.15.2, VS Code z rozszerzeniem Python, Git 2.56.0
+- Repo sklonowane poza OneDrive na obu komputerach, imię i e-mail w Git tylko dla tego repo (bez --global)
+- hello.py, README.md, pierwsze commity i push
+- Obieg dwóch komputerów sprawdzony (commit i push na jednym, pull na drugim)
+
+Etap 1 (każde ćwiczenie w osobnym pliku, z commitem):
+- zmienne.py: tworzenie i nadpisywanie zmiennych, print z kilkoma argumentami
+- typy.py: str, int, float, bool, type(), różnica między 5 + 5 a "5" + "5"
+- wejscie.py: input(), zamiana typu przez int(), obliczanie wieku z roku urodzenia
+- warunki.py: if / elif / else, testy graniczne (17, 18, 64, 65)
+- petle.py: pętla for z range, tabliczka mnożenia, wcięcie jako zapis tego, co należy do pętli
+- zgadnij.py: pętla while, gra w zgadywanie liczby
 
 ## Poznane pojęcia
-- PATH: lista folderów, w których Windows szuka programów po nazwie
-- print(): wbudowana funkcja wypisująca tekst na ekranie
-- Plik .py: kod w Pythonie, uruchamiany przez `python nazwa.py`
-- Markdown (.md): tekst z prostym formatowaniem (# nagłówek, bloki kodu)
-- Git a GitHub: Git działa lokalnie, GitHub to wspólne miejsce w internecie
-- Cykl pracy: git add (do paczki) -> git commit -m "opis" (zatwierdzenie lokalne) -> git push (wysłanie na GitHuba)
-- git status: pokazuje, co jest zmienione, w paczce i niewysłane
-- Stany pliku: untracked, modified, staged ("Changes to be committed")
-- Commit zapisuje to, co jest na dysku, nie to, co widać w oknie edytora (trzeba zapisać Ctrl+S)
-- "no changes added to commit": zapomniane git add (albo niezapisany plik)
-- git clone: pobranie całego repo z GitHuba
-- git pull: pobranie i wciągnięcie zmian z GitHuba; git fetch tylko sprawdza, co nowego
-- Zasada pracy na 2 komputerach: zaczynam od pulla, kończę pushem
-- Dobry opis commita mówi, co zmieniłem (nie "poprawki")
-- Git i OneDrive nie współpracują dobrze, repo trzymamy poza OneDrive
+- Zmienna: nazwa, pod którą Python pamięta wartość; = to "włóż do pudełka", nie "równa się"
+- Python czyta kod od góry do dołu, nowa wartość zmiennej działa od miejsca przypisania
+- Typy: str, int, float, bool; liczby różnych typów można mieszać, tekstu z liczbą nie (TypeError)
+- input() zawsze zwraca str; do liczenia trzeba int() lub float()
+- Czytanie błędu (Traceback): linijka z komunikatem bywa dalej niż faktyczna przyczyna
+- Komentarz #: pisze się dlaczego, nie co; musi opisywać kod, który faktycznie stoi w pliku
+- Warunki: if / elif / else, dwukropek i wcięcie; porównania <, >, <=, >=, ==, !=
+- Kolejność warunków ma znaczenie: Python zatrzymuje się na pierwszym spełnionym; układamy od najbardziej szczegółowego do najogólniejszego
+- if / elif / else nie jest pętlą (pomija pozostałe gałęzie i idzie dalej)
+- for i in range(...): liczenie od zera, górna granica nie wchodzi do wyniku
+- while: powtarza, dopóki warunek jest prawdziwy; w środku musi się zmieniać to, co warunek sprawdza
+- Nieskończona pętla: warunek zostaje prawdziwy; zatrzymanie programu: Ctrl+C
+- Wcięcie w Pythonie to zapis przynależności do bloku, nie ozdoba
+- Dobre nazwy zmiennych mówią, co jest w środku (rok_urodzenia, a nie wiek_wprowadz); jeden język w nazwach (polski)
 
 ## Otwarte pytania
 - Czy laptop jest używany także do pracy zawodowej na tym samym koncie Windows? (od tego zależy, czy ustawienia Gita muszą zostać tylko lokalne dla repo)
@@ -41,12 +44,18 @@ Następny: Etap 1 (podstawy: zmienne, typy, warunki, pętle), jeszcze nie rozpoc
 - Konflikty przy pracy na 2 komputerach (etap 3)
 - fetch vs pull, dokładniej (etap 3)
 - Ścieżki względne zamiast bezwzględnych w kodzie (etap 4)
+- Obsługa złego wejścia (litera zamiast liczby, ValueError), try/except (etap 4)
+- Dokładniejsze liczenie wieku (czy urodziny już były w tym roku), dziś uproszczone: 2026 - rok
+- Formatowanie kodu (spacje wokół operatorów) przejmie ruff (etap 7)
+- Uproszczenie podwójnego input() w zgadnij.py, może po poznaniu funkcji (etap 2)
 
 ## Proponowane zmiany planu
-- Brak. Etapy w PLAN.md zostają bez zmian (profil w PLAN.md już uzupełniony).
+- Brak. Etapy w PLAN.md zostają bez zmian.
 
 ## Decyzje
 - Źródło prawdy: docs/ w repo. Aktualizacje wklejam ręcznie po każdym etapie.
 - Repo lokalne trzymam poza OneDrive: C:\Users\<nazwa>\python-od-zera
 - Praca na 2 komputerach: zaczynam od git pull, kończę git push
 - Imię i e-mail w Git ustawiam bez --global, tylko dla tego repo
+- Przed commitem zawsze: Ctrl+S, git add, git status, git commit -m "opis co zmieniłem", git push
+- Nazwy zmiennych w jednym języku (polskim), komentarze tłumaczą "dlaczego"
